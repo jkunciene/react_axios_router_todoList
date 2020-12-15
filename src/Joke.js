@@ -16,8 +16,6 @@ const getJoke=()=>{
         
     })
 }
-
-
 console.log(joke)
 
     return (

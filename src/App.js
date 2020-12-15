@@ -1,6 +1,8 @@
 import Main from './Main';
 import Joke from './Joke';
 import ToDo from './ToDo';
+import Home from './Home';
+
 
 import React from "react";
 import {
@@ -16,14 +18,17 @@ function App() {
     <Router>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/main">Home</Link>
+          <ul className='nav justify-content-center'>
+            <li className='nav-link'>
+              <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className='nav-link'>
+              <Link to="/main">Cats</Link>
+            </li>
+            <li className='nav-link'>
               <Link to="/joke">Joke</Link>
             </li>
-            <li>
+            <li className='nav-link'>
               <Link to="/todo">Tasks List</Link>
             </li>
           </ul>
@@ -32,6 +37,9 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+           <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="/main">
             <Main />
           </Route>
