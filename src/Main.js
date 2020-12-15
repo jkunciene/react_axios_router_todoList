@@ -25,10 +25,12 @@ useEffect(()=>{
 }, [])
 
     return (
-        <div>
+        <div className='container'>
+        <div className='list-group list-group-flush'>
            {posts.map((fact, index)=>(
-            <p key={index}>{fact.text}</p>)               
+            <p className='list-group-item' key={index}>{fact.text}</p>)               
            )}
+           </div>
            </div>
     )
 }

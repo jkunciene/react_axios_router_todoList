@@ -19,9 +19,9 @@ const getJoke=()=>{
 console.log(joke)
 
     return (
-        <div>            
-            {joke.insult}
-            <button onClick={getJoke}>Get your joke...</button>
+        <div className='container'>            
+            <div>{joke.insult}</div>
+            <button className='btn btn-info' onClick={getJoke}>Get your joke...</button>
         </div>
     )
 }
