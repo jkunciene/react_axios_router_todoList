@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
 
-import ChuckNorris from './ChuckNorris'
-
 const Joke = () => {
 
     //TOP LEVEL for STATE
@@ -27,10 +25,7 @@ console.log(joke)
             <div className='form-control-lg '>{joke.insult}</div>
             <button className='btn btn-info' onClick={getJoke}>Get one joke...</button>
             </div>
-            <div>
-                {/*gauti api key, apsirasyti koponenta, gaunanti duomenis is https://rapidapi.com/matchilling/api/chuck-norris/endpoints*/}
-                {/*<ChuckNorris/>*/}
-            </div>
+
         </div>
     )
 }
